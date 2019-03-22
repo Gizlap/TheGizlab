@@ -7,12 +7,4 @@
   </li>
 </ul>
 
-<div *ngIf="selectedProject">
-  <h2>{{selectedProject.name | uppercase}}:</h2>
-  <div><span>Name: </span> {{selectedProject.name}}</div>
-  <div>
-    <label>Description: {{selectedProject.description}}</label>
-    <br/>
-    <label>Time: {{selectedProject.time}} </label>
-  </div>
-</div>
+<app-project-detail [project]="selectedProject"></app-project-detail>

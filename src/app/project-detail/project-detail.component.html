@@ -1,3 +1,10 @@
-<p>
-  project-detail works!
-</p>
+<div *ngIf="project">
+
+  <h2>{{project.name | uppercase}}:</h2>
+  <div><span>Name: </span> {{project.name}}</div>
+  <div>
+    <label>Description: {{project.description}}</label>
+    <br/>
+    <label>Time: {{project.time}} </label>
+  </div>
+</div>
